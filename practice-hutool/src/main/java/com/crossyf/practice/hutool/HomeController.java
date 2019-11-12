@@ -7,6 +7,7 @@ import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.poi.excel.ExcelUtil;
 import cn.hutool.poi.excel.ExcelWriter;
+import cn.hutool.system.SystemUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -142,5 +143,9 @@ public class HomeController {
         double value = NumberUtil.round(NumberUtil.mul(23, 5.8932), 2).doubleValue();
         Console.log(value);
 
+        Console.log(SystemUtil.getRuntimeInfo());
+
     }
+
+
 }
