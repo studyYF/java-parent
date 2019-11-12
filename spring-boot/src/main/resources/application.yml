@@ -1,0 +1,7 @@
+image:
+  ftp:
+    url: 192.168.3.19
+    port: 22
+    username: crossyf
+    password: 853211
+

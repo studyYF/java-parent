@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>practice-hutool</module>
+        <module>spring-boot</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
