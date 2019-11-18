@@ -1,0 +1,17 @@
+server:
+  port: 8880
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.98.152.72:3306/crossyf?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: crossyf
+    password: 853211
+
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.crossyf.seven.model
+logging:
+  level.com.crossyf: debug
+  path: logs/
