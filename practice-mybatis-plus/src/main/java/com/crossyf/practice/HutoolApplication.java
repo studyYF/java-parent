@@ -1,6 +1,7 @@
 package com.crossyf.practice;
 
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -17,3 +18,11 @@ public class HutoolApplication {
         SpringApplication.run(HutoolApplication.class,args);
     }
 }
+
+/*
+BeanFactoryPostProcessor 处理bean的定义
+
+
+BeanPostProcessor 处理bean完成实例化后的对象
+
+ */
