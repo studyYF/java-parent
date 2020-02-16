@@ -5,3 +5,7 @@ image:
     username: crossyf
     password: 853211
 
+server:
+  port: 8099
+  servlet:
+    context-path: /
