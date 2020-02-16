@@ -18,7 +18,7 @@ public class User {
     @Id
     private String id;
     private String avatar;
-    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Text,fielddata = true)
     private String name;
     private String password;
     @Field(type = FieldType.Text)
