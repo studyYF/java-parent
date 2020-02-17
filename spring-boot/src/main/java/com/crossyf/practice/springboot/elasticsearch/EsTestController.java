@@ -73,7 +73,7 @@ public class EsTestController {
         int pageNum = Integer.parseInt(page);
         int pageSize = Integer.parseInt(size);
         BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
-        queryBuilder.must(QueryBuilders.matchPhraseQuery("password","b53cac62e7175637d4beb3b16b2f7915"));
+//        queryBuilder.must(QueryBuilders.matchPhraseQuery("password","b53cac62e7175637d4beb3b16b2f7915"));
         Pageable pageable = PageRequest.of(pageNum, pageSize, Sort.Direction.DESC, "id");
         Page<User> search = esTestService.search(queryBuilder, pageable);
         System.out.println(search);
@@ -83,6 +83,4 @@ public class EsTestController {
         resultMap.put("pages",search.getTotalPages());
         return resultMap;
     }
-
-
 }
