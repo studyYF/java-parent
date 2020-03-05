@@ -10,6 +10,9 @@ server:
   servlet:
     context-path: /
 spring:
+  elasticsearch:
+    host: localhost
+    port: 9200
   redis:
     host: localhost
     database: 1

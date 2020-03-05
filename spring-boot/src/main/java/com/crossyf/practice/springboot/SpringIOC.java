@@ -7,6 +7,9 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.boot.web.servlet.context.WebApplicationContextServletContextAwareProcessor;
 
+import javax.servlet.Servlet;
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author Created by YangFan.
  * @date 2019/11/12
@@ -29,6 +32,7 @@ public class SpringIOC {
      */
 
 
+    HttpServletRequest request = null;
     DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
     AbstractBeanDefinition definition = new RootBeanDefinition(Business.class);
 
