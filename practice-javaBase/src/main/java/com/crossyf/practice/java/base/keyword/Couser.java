@@ -1,4 +1,4 @@
-package com.crossyf.practice.java.thread;
+package com.crossyf.practice.java.base.keyword;
 
 import com.crossyf.practice.java.base.keyword.Father;
 

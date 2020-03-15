@@ -1,6 +1,7 @@
 package com.crossyf.practice.java.base;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Created by YangFan.
@@ -17,7 +18,6 @@ public class ConcurrentHashMapStu {
         List<String> arrayList = new ArrayList<>(3);
         System.out.println(arrayList.size());
         arrayList.set(2,"1");
-
     }
 
 

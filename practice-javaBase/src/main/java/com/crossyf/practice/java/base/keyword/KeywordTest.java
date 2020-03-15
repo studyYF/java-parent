@@ -1,8 +1,6 @@
-package com.crossyf.practice.java.thread;
+package com.crossyf.practice.java.base.keyword;
 
 import com.crossyf.practice.java.base.Girl;
-import com.crossyf.practice.java.base.keyword.Son;
-import com.crossyf.practice.java.thread.Couser;
 
 /**
  * @author Created by crossyf.

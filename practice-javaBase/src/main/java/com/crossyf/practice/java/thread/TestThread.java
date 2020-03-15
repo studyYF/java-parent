@@ -5,20 +5,29 @@ package com.crossyf.practice.java.thread;
  * @date 2020/2/25
  * 功能:
  */
-public class TestThread implements Runnable {
+public class TestThread{
 
 
-    @Override
-    public void run() {
-        System.out.println("我是线程b");
+    public static synchronized void test() {
+        String string = "dkjfsl";
+        try {
+            string.wait(10000);
+            System.out.println("测试方法");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
-    public static void main(String[] args) {
-        Thread testThread = new Thread(new TestThread());
-        testThread.start();
 
-        Thread threada = new Thread(new ThreadA());
-        threada.start();
+    public static void main(String[] args) {
+        Thread threadA = new Thread(new ThreadA());
+        threadA.setName("AAA");
+
+        Thread threadB = new Thread(new ThreadA());
+        threadB.setName("BBB");
+
+        threadA.start();
+        threadB.start();
     }
 }
 
