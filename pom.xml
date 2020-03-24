@@ -9,6 +9,7 @@
         <module>spring-boot</module>
         <module>practice-mybatis-plus</module>
         <module>writeSpring</module>
+        <module>netty-tomcat</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
